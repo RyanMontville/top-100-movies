@@ -1,0 +1,7 @@
+<app-header />
+<main>
+    <app-movie-detail [movie]="randomGenreMovie" [cardWidth]="cardWidth"/>
+    <div class="button-wrapper">
+        <button (click)="getAnotherMovie()">Get another random {{genreString}} movie</button>
+    </div>
+</main>

@@ -1,0 +1,6 @@
+<app-header />
+<div id="movies-wrapper">
+    @for (movie of movies; track movie) {
+        <app-movie-detail [movie]="movie" [cardWidth]="cardWidth"/>
+    }
+    </div>

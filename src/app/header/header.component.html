@@ -1,0 +1,61 @@
+<h1>Empire's <a href="https://www.empireonline.com/movies/features/best-movies-2/" target="_blank">100 Best Movies Of All Time</a></h1>
+<header>
+    <a (click)="showMenu = !showMenu" class="searchbar"><span class="material-symbols-outlined">
+            search
+        </span> Give me ...</a>
+    @if (showMenu) {
+    <ul class="main-menu">
+        <li><a (click)="goToAllMovies()">Give me all 100 movies</a></li>
+        <li><a (click)="goToRandom()">Give me a random movie</a></li>
+        <li><a (click)="toggleGenreMenu()">Give me all movies in a genre</a></li>
+        <li><a (click)="showGenresRandom = !showGenresRandom">Give me a random movie in a genre</a></li>
+    </ul>
+
+    }
+    @if (showGenres) {
+    <ul class="genre-menu">
+        <li><a (click)="goToGenre('28')">Action</a></li>
+        <li><a (click)="goToGenre('12')">Adventure</a></li>
+        <li><a (click)="goToGenre('16')">Animation</a></li>
+        <li><a (click)="goToGenre('35')">Comedy</a></li>
+        <li><a (click)="goToGenre('80')">Crime</a></li>
+        <li><a (click)="goToGenre('99')">Documentary</a></li>
+        <li><a (click)="goToGenre('18')">Drama</a></li>
+        <li><a (click)="goToGenre('10751')">Family</a></li>
+        <li><a (click)="goToGenre('14')">Fantasy</a></li>
+        <li><a (click)="goToGenre('36')">History</a></li>
+        <li><a (click)="goToGenre('27')">Horror</a></li>
+        <li><a (click)="goToGenre('10402')">Music</a></li>
+        <li><a (click)="goToGenre('9648')">Mystery</a></li>
+        <li><a (click)="goToGenre('10749')">Romance</a></li>
+        <li><a (click)="goToGenre('878')">Science Fiction</a></li>
+        <li><a (click)="goToGenre('53')">Thriller</a></li>
+        <li><a (click)="goToGenre('10752')">War</a></li>
+        <li><a (click)="goToGenre('37')">Western</a></li>
+    </ul>
+
+    }
+
+    @if (showGenresRandom) {
+    <ul class="genre-random-menu">
+        <li><a (click)="goToGenreRandom('28')">Action</a></li>
+        <li><a (click)="goToGenreRandom('12')">Adventure</a></li>
+        <li><a (click)="goToGenreRandom('16')">Animation</a></li>
+        <li><a (click)="goToGenreRandom('35')">Comedy</a></li>
+        <li><a (click)="goToGenreRandom('80')">Crime</a></li>
+        <li><a (click)="goToGenreRandom('99')">Documentary</a></li>
+        <li><a (click)="goToGenreRandom('18')">Drama</a></li>
+        <li><a (click)="goToGenreRandom('10751')">Family</a></li>
+        <li><a (click)="goToGenreRandom('14')">Fantasy</a></li>
+        <li><a (click)="goToGenreRandom('36')">History</a></li>
+        <li><a (click)="goToGenreRandom('27')">Horror</a></li>
+        <li><a (click)="goToGenreRandom('10402')">Music</a></li>
+        <li><a (click)="goToGenreRandom('9648')">Mystery</a></li>
+        <li><a (click)="goToGenreRandom('10749')">Romance</a></li>
+        <li><a (click)="goToGenreRandom('878')">Science Fiction</a></li>
+        <li><a (click)="goToGenreRandom('53')">Thriller</a></li>
+        <li><a (click)="goToGenreRandom('10752')">War</a></li>
+        <li><a (click)="goToGenreRandom('37')">Western</a></li>
+    </ul>
+    }
+</header>

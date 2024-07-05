@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+}
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.searchbar {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #9AA0A6;
+    width: 80%;
+    margin: 5px auto;
+    display: block;
+    z-index: 1;
+    text-align: left;
+}
+
+.main-menu,
+.genre-menu,
+.genre-random-menu {
+    position: absolute;
+    top: 0;
+    left: 9%;
+    right: 9%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #9AA0A6;
+    z-index: 2;
+    
+}
+
+.main-menu li,
+.genre-menu li,
+.genre-random-menu li {
+    list-style: none;
+    text-align: left;
+    padding: 0 2px;
+    font-size: 20px;
+}
+.main-menu li:hover {
+    background-color: #ECECEC;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    color: #9AA0A6;
+}
+
+a {
+    cursor: pointer;
+    padding: 5px;
+}

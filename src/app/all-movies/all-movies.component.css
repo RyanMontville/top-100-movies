@@ -1,0 +1,9 @@
+#movies-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#movies-wrapper article {
+    width: 400px;
+}

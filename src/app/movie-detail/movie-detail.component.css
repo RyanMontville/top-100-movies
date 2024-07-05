@@ -1,0 +1,22 @@
+article {
+    background-color: #fff;
+}
+.full {
+    max-width: 900px;
+}
+
+.card {
+    width: 400px;
+}
+
+.genre {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ECECEC;
+}
+
+@media only screen and (max-width: 850px) {
+    .full {width: 95%;}
+    .card {width: 95%;}
+}

@@ -1,0 +1,11 @@
+<article [ngClass]="cardWidth">
+    <div id="banner">
+        <img id="movieImage" [src]="movie.imageSource" [alt]="movie.imageAlt" />
+        <h2 id="movieTitle">{{movie.title}} ({{movie.releaseYear}})</h2>
+    </div>
+    @for (genre of movie.genres; track movie) {
+        <span class="genre">{{genre}}</span>
+    }
+    <p id="movieDescription">{{movie.movieOverview}}</p>
+    <p id="searchUrl"><a href={{movie.searchURL}} target="_blank">Search options for {{movie.title}}</a></p>
+</article>
