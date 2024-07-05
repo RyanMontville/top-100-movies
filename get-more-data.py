@@ -7,7 +7,7 @@ base_url = "https://api.themoviedb.org/3/search/movie?query="
 
 headers = {
     "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MDAwNjFkMTEzYjg2M2JlMzk3NGYwNWQ0MTQ5N2EzNiIsIm5iZiI6MTcxOTk0NDgzMS40MTc1OTksInN1YiI6IjY0MDNiYWQzMTM2NTQ1MDA5NjVjYzNiMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MW7Kqs469RyA62cSBcyRwHHyzq_jjavSkPvMokgRu7w"
+    "Authorization": redacted
 }
 movies = []
 for movie in olddata:
